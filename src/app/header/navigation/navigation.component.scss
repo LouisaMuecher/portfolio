@@ -1,5 +1,5 @@
 nav {
-    position: fixed;
+    position: absolute;
     top: 45px;
     left: 62px;
     display: flex;
@@ -44,9 +44,9 @@ nav {
 
 img {
     width: 50px;
-    position: fixed;
-    right: 75px;
-    top: 40px;
+    position: absolute;
+    right: -578px;
+    top: -22px;
 }
 
 .language-switcher {
