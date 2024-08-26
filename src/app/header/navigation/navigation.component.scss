@@ -1,0 +1,78 @@
+nav {
+    position: fixed;
+    top: 45px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative; 
+    padding-bottom: 8px; 
+    display: inline-block;
+    transition: color 0.3s;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 10px;
+    bottom: -8px;
+    width: 8px; 
+    height: 8px;
+    background-color: #3DCFB6;
+    border-radius: 50%;
+    opacity: 0; 
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  nav a:hover::after {
+    opacity: 1; 
+    transform: translateX(-50%) translateY(5px); 
+  }
+  
+.menu {
+    margin-top: 8px;
+}
+
+img {
+    width: 50px;
+    position: fixed;
+    right: 75px;
+    top: 40px;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #3DCFB6;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100px;
+  }
+  
+  .language-switcher button {
+    border: none;
+    background-color: transparent;
+    color: #3DCFB6;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .language-switcher button.active {
+    background-color: #3DCFB6;
+    color: #fff;
+    font-weight: 700;
+  }

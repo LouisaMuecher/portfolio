@@ -1,1 +1,17 @@
-<p>navigation works!</p>
+<nav class="fontFira">
+    <div class="language-switcher">
+        <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'">
+            EN
+        </button>
+        <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'">
+          DE
+        </button>
+    </div>
+    <div class="menu">
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+    <a href="#"><img src="./../../../assets/img/logo.png" alt=""></a>
+</nav>

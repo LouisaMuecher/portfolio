@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './navigation.component.scss'
 })
 export class NavigationComponent {
+  currentLanguage: string = 'en';
 
+  switchLanguage(language: string): void {
+    this.currentLanguage = language;
+    // Hier kommt noch eine Methode zum Text wechseln hin.
+  }
 }
