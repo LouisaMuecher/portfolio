@@ -50,13 +50,36 @@ p {
     border-width: 1px 0;
     border-style: solid;
     border-color: #3DCFB6;
-  
+    position: relative;
+    transition: background-color 0.3s ease;
+
     &:hover {
       background-color: #3DCFB64D;
     }
-  }
+
+    &:hover .project-image {
+      opacity: 1;
+      transform: translateX(50%);
+    }
+}
+
+.project-image {
+    position: absolute;
+    right: -250px;
+    top: -20%;
+    transform: translateY(-50%) translateX(100%);
+    width: 295px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: contain;
+    opacity: 0;
+    z-index: 10; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
   
   .project-name, .project-technologies, .pipe {
-    background-color: transparent; /* Kein Hintergrund für die inneren Elemente */
+    background-color: transparent;
   }
   
