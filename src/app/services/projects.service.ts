@@ -35,7 +35,7 @@ export class ProjectService {
     },
     {
       id: 3,
-      title: 'Join',
+      title: 'DABubble',
       description: 'Eine Kanban-Projektmanagement-Anwendung',
       image: 'assets/img/dabubble.png',
       technologies: ['Angular', 'Firebase', 'TypeScript'],
