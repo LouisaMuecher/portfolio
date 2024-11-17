@@ -22,10 +22,17 @@
 
 .subtitle {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 18px;
+  font-weight: 400;
   margin-bottom: 4rem;
   max-width: 600px;
   line-height: 21.6px;
+}
+
+.projects-section {
+  display: flex;
+  gap: 4rem;
+  position: relative;
 }
 
 .projects-list {
@@ -48,9 +55,52 @@
     background-color: transparent;
   }
 
+  .project-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .project-tech {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
   .project-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+.preview-container {
+  position: sticky;
+  top: 4rem;
+  flex: 1;
+  height: fit-content;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.3s ease forwards;
+
+  .preview-image {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects-section {
+    flex-direction: column;
+  }
+
+  .preview-container {
+    display: none; // Versteckt die Preview auf mobilen Geräten
   }
 }

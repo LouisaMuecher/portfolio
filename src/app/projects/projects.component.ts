@@ -13,17 +13,29 @@ import { ProjectService, Project } from '../services/projects.service';
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [];
   selectedProject: Project | null = null;
+  previewProject: Project | null = null;
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
-    // Da getProjects() direkt ein Array zurückgibt, können wir es direkt zuweisen
     this.projects = this.projectService.getProjects();
   }
 
+  showPreview(project: Project): void {
+    if (!this.selectedProject) { // Nur Preview zeigen, wenn kein Popup offen ist
+      this.previewProject = project;
+    }
+  }
+
+  hidePreview(): void {
+    if (!this.selectedProject) { // Nur Preview verstecken, wenn kein Popup offen ist
+      this.previewProject = null;
+    }
+  }
+
   openProjectDetails(project: Project): void {
-    console.log('Opening project:', project);
     this.selectedProject = project;
+    this.previewProject = null; // Preview ausblenden wenn Popup geöffnet wird
   }
 
   closeProjectDetails(): void {
