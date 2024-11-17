@@ -1,10 +1,10 @@
 .modal-overlay {
   position: fixed;
+  background-color: #1c1c1c;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +12,17 @@
 }
 
 .modal-content {
-  background-color: #1a1a1a;
-  width: 90%;
-  max-width: 1000px;
+  background-image: url("./../../../assets/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 1248px;
+  height: 656px;
   padding: 3rem;
   border-radius: 15px;
   position: relative;
   color: white;
+  border: 1px solid #4fd1c5;
 }
 
 .close-btn {
@@ -34,47 +38,64 @@
 
 .project-number {
   color: #4fd1c5;
-  font-size: 4rem;
+  font-size: 128px;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .project-title {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .section-title {
   color: #4fd1c5;
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .project-description {
   margin-bottom: 2rem;
-  color: #718096;
-  line-height: 1.6;
+  color: #fff;
+  line-height: 21.6px;
+  width: 500px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .project-preview {
   margin: 2rem 0;
   img {
-    width: 100%;
+    width: 50%;
     border-radius: 8px;
+    position: absolute;
+    top: 100px;
+    right: 30px;
   }
 }
 
-.tech-stack {
+.technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 16px;
   margin: 2rem 0;
 
   .tech-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     background-color: transparent;
-    color: #4fd1c5;
+    color: white;
     padding: 0.5rem 1rem;
-    border: 1px solid #4fd1c5;
-    border-radius: 4px;
+
+    .tech-icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      color: #4fd1c5;
+    }
   }
 }
 
@@ -82,17 +103,23 @@
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
-
+  background-color: transparent;
+  text-align: center;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  
   .link-btn {
-    padding: 0.5rem 2rem;
-    border: 1px solid #4fd1c5;
-    border-radius: 4px;
+    padding: 10px 24px 10px 24px;
+    border: 1px solid white;
+    border-radius: 100px;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #4fd1c5;
+      border: 1px solid #4fd1c5;
+      color: #4fd1c5;
     }
   }
 }
