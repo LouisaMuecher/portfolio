@@ -1,4 +1,4 @@
-.project-details-modal {
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,16 +14,14 @@
 .modal-content {
   background-color: #1a1a1a;
   width: 90%;
-  max-width: 1200px;
-  max-height: 90vh;
-  overflow-y: auto;
+  max-width: 1000px;
   padding: 3rem;
   border-radius: 15px;
   position: relative;
   color: white;
 }
 
-.close-button {
+.close-btn {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -45,25 +43,27 @@
   margin-bottom: 2rem;
 }
 
-.project-description {
-  margin-bottom: 2rem;
-  
-  h3 {
-    color: #4fd1c5;
-    margin-bottom: 1rem;
-  }
+.section-title {
+  color: #4fd1c5;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.project-image {
+.project-description {
+  margin-bottom: 2rem;
+  color: #718096;
+  line-height: 1.6;
+}
+
+.project-preview {
   margin: 2rem 0;
-  
   img {
     width: 100%;
     border-radius: 8px;
   }
 }
 
-.technologies {
+.tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -83,7 +83,7 @@
   gap: 1rem;
   margin: 2rem 0;
 
-  .button {
+  .link-btn {
     padding: 0.5rem 2rem;
     border: 1px solid #4fd1c5;
     border-radius: 4px;
@@ -102,7 +102,7 @@
   justify-content: flex-end;
   margin-top: 2rem;
 
-  .next-button {
+  .next-btn {
     background: none;
     border: none;
     color: #4fd1c5;

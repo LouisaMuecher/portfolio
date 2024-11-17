@@ -1,64 +1,56 @@
 .projects-container {
-  padding: 2rem;
-  background-color: #141414;
+  padding: 4rem 6rem;
+  background-color: #1c1c1c;
   min-height: 100vh;
   color: white;
-}
-
-.header {
-  margin-bottom: 4rem;
+  margin: 0 auto;
 }
 
 .portfolio-label {
   color: #4fd1c5;
-  font-size: 1rem;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .featured-title {
   color: #4fd1c5;
-  font-size: 3rem;
+  font-size: 64px;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .subtitle {
-  color: #718096;
+  color: #fff;
   font-size: 1.1rem;
+  margin-bottom: 4rem;
+  max-width: 600px;
+  line-height: 21.6px;
 }
 
 .projects-list {
-  max-width: 800px;
-}
-
-.project-item {
-  padding: 2rem 0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    .project-title {
-      color: #4fd1c5;
+  .project-item {
+    width: 700px;
+    text-decoration: none;
+    color: #fff;
+    padding: 40px 32px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #3DCFB6;
+  
+    &:hover {
+      background-color: #3DCFB64D;
     }
   }
-}
 
-.project-info {
-  margin-bottom: 1rem;
-}
+  .project-title, .project-tech, .divider {
+    transition: color 0.3s ease;
+    background-color: transparent;
+  }
 
-.project-title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.project-tech {
-  color: #718096;
-  font-size: 0.9rem;
-}
-
-.divider {
-  height: 1px;
-  background-color: #2d3748;
-  margin-top: 1rem;
+  .project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

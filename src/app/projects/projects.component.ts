@@ -17,14 +17,8 @@ export class ProjectsComponent implements OnInit {
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
-    this.projectService.getProjects().subscribe({
-      next: (projects) => {
-        this.projects = projects;
-      },
-      error: (error) => {
-        console.error('Error loading projects:', error);
-      }
-    });
+    // Da getProjects() direkt ein Array zurückgibt, können wir es direkt zuweisen
+    this.projects = this.projectService.getProjects();
   }
 
   openProjectDetails(project: Project): void {

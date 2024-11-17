@@ -1,16 +1,23 @@
 <div class="projects-container">
-  <div class="header">
-    <p class="portfolio-label">Portfolio</p>
-    <h1 class="featured-title">Featured Projects</h1>
-    <p class="subtitle">Explore a selection of my work here - interact with projects to see my skills in action.</p>
-  </div>
+  <p class="portfolio-label fontKarla">Portfolio</p>
+  <h1 class="featured-title fontFira">Featured Projects</h1>
+  <p class="subtitle fontKarla">Explore a selection of my work here - interact with <br> projects to see my skills in action.</p>
 
   <div class="projects-list">
     <div *ngFor="let project of projects; let i = index" 
-         class="project-item" 
+         class="project-item"
          (click)="openProjectDetails(project)">
-      <div class="project-info">
+      <div class="project-content">
         <h3 class="project-title">{{ project.title }}</h3>
         <p class="project-tech">{{ project.technologies.join(' | ') }}</p>
       </div>
       <div class="divider"></div>
+    </div>
+  </div>
+</div>
+
+<app-project-details 
+  *ngIf="selectedProject" 
+  [project]="selectedProject"
+  (onClose)="closeProjectDetails()">
+</app-project-details>
