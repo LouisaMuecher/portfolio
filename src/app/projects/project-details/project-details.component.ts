@@ -11,9 +11,19 @@ import { Project } from '../../services/projects.service';
 })
 export class ProjectDetailsComponent {
   @Input() project: Project | null = null;
+  @Input() projects: Project[] = [];  // Neue Input-Property für alle Projekte
   @Output() onClose = new EventEmitter<void>();
+  @Output() onNextProject = new EventEmitter<number>();  // Neue Output-Property
 
   closeDetails(): void {
     this.onClose.emit();
+  }
+
+  nextProject(): void {
+    if (this.project && this.projects.length > 0) {
+      const currentIndex = this.projects.findIndex(p => p.id === this.project!.id);
+      const nextIndex = (currentIndex + 1) % this.projects.length; // Zurück zum Anfang wenn am Ende
+      this.onNextProject.emit(this.projects[nextIndex].id);
+    }
   }
 }

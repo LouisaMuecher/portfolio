@@ -26,5 +26,7 @@
 <app-project-details 
   *ngIf="selectedProject" 
   [project]="selectedProject"
-  (onClose)="closeProjectDetails()">
+  [projects]="projects"
+  (onClose)="closeProjectDetails()"
+  (onNextProject)="handleNextProject($event)">
 </app-project-details>

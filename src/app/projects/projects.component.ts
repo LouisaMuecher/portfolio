@@ -41,4 +41,13 @@ export class ProjectsComponent implements OnInit {
   closeProjectDetails(): void {
     this.selectedProject = null;
   }
+
+  handleNextProject(nextProjectId: number): void {
+    const nextProject = this.projects.find(p => p.id === nextProjectId);
+    if (nextProject) {
+      this.selectedProject = nextProject;
+      // Preview bleibt null, da wir im Popup-Modus sind
+      this.previewProject = null;
+    }
+  }
 }
