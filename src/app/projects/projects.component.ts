@@ -22,20 +22,20 @@ export class ProjectsComponent implements OnInit {
   }
 
   showPreview(project: Project): void {
-    if (!this.selectedProject) { // Nur Preview zeigen, wenn kein Popup offen ist
+    if (!this.selectedProject) { 
       this.previewProject = project;
     }
   }
 
   hidePreview(): void {
-    if (!this.selectedProject) { // Nur Preview verstecken, wenn kein Popup offen ist
+    if (!this.selectedProject) { 
       this.previewProject = null;
     }
   }
 
   openProjectDetails(project: Project): void {
     this.selectedProject = project;
-    this.previewProject = null; // Preview ausblenden wenn Popup geöffnet wird
+    this.previewProject = null; 
   }
 
   closeProjectDetails(): void {
@@ -46,7 +46,6 @@ export class ProjectsComponent implements OnInit {
     const nextProject = this.projects.find(p => p.id === nextProjectId);
     if (nextProject) {
       this.selectedProject = nextProject;
-      // Preview bleibt null, da wir im Popup-Modus sind
       this.previewProject = null;
     }
   }

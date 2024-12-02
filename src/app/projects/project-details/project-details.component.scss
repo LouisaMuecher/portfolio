@@ -22,7 +22,7 @@
   border-radius: 15px;
   position: relative;
   color: white;
-  border: 1px solid #4fd1c5;
+  border: 1px solid #3DCFB6;
 }
 
 .close-btn {
@@ -37,7 +37,7 @@
 }
 
 .project-number {
-  color: #4fd1c5;
+  color: #3DCFB6;
   font-size: 128px;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -50,7 +50,7 @@
 }
 
 .section-title {
-  color: #4fd1c5;
+  color: #3DCFB6;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -94,7 +94,7 @@
       width: 20px;
       height: 20px;
       object-fit: contain;
-      color: #4fd1c5;
+      color: #3DCFB6;
     }
   }
 }
@@ -118,8 +118,8 @@
     transition: all 0.3s ease;
 
     &:hover {
-      border: 1px solid #4fd1c5;
-      color: #4fd1c5;
+      border: 1px solid #3DCFB6;
+      color: #3DCFB6;
     }
   }
 }
@@ -132,7 +132,7 @@
   .next-btn {
     background: none;
     border: none;
-    color: #4fd1c5;
+    color: #3DCFB6;
     cursor: pointer;
     font-size: 1rem;
   }
