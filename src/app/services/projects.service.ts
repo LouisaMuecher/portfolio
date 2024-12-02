@@ -52,7 +52,7 @@ export class ProjectService {
     {
       id: 3,
       title: 'DABubble',
-      description: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+      description: 'This app is a Slack clone, simplifying team communication with real-time messaging and organized channels.',
       image: 'assets/img/dabubble.png',
       technologies: ['Angular', 'Firebase', 'TypeScript'],
       technologiesWithIcons: [
