@@ -1,1 +1,71 @@
-<p>contact works!</p>
+<div class="contact-container">
+    <div class="contact-left">
+      <p class="contact-label">Contact me</p>
+      <h1 class="contact-title">Let's work together</h1>
+      <h2 class="contact-subtitle">Got a problem to solve?</h2>
+      <p class="contact-text">
+        Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.
+      </p>
+      <p class="contact-cta">
+        Need a Frontend developer? <span class="highlight">Let's talk!</span>
+      </p>
+      <div class="tech-stack">
+        <img src="assets/img/javascript.svg" alt="JavaScript">
+        <img src="assets/img/html.svg" alt="HTML">
+        <img src="assets/img/css.svg" alt="CSS">
+      </div>
+    </div>
+  
+    <div class="contact-right">
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="form-group">
+          <label>What's your name?</label>
+          <input 
+            type="text" 
+            name="name" 
+            [(ngModel)]="formData.name" 
+            required 
+            placeholder="Your name goes here"
+          >
+        </div>
+  
+        <div class="form-group">
+          <label>What's your email?</label>
+          <input 
+            type="email" 
+            name="email" 
+            [(ngModel)]="formData.email" 
+            required 
+            placeholder="youremail@email.com"
+          >
+        </div>
+  
+        <div class="form-group">
+          <label>How can I help you?</label>
+          <textarea 
+            name="message" 
+            [(ngModel)]="formData.message" 
+            required 
+            placeholder="Hello Lukas, I am interested in..."
+            rows="5"
+          ></textarea>
+        </div>
+  
+        <div class="privacy-check">
+          <input 
+            type="checkbox" 
+            name="privacy" 
+            [(ngModel)]="formData.privacy" 
+            required
+            id="privacy"
+          >
+          <label for="privacy">
+            I've read the <a href="#" class="privacy-link">privacy policy</a> and agree to the processing of my data as outlined.
+          </label>
+        </div>
+  
+        <button type="submit" [disabled]="!contactForm.valid">Say Hello :)</button>
+      </form>
+    </div>
+  </div>
+  
