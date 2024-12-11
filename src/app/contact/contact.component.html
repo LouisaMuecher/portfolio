@@ -1,25 +1,20 @@
 <div class="contact-container">
     <div class="contact-left">
-      <p class="contact-label">Contact me</p>
-      <h1 class="contact-title">Let's work together</h1>
-      <h2 class="contact-subtitle">Got a problem to solve?</h2>
-      <p class="contact-text">
+      <p class="contact-label fontKarla">Contact me</p>
+      <h1 class="contact-title fontFira">Let's work together</h1>
+      <h2 class="contact-subtitle fontFira">Got a problem to solve?</h2>
+      <p class="contact-text fontKarla">
         Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.
       </p>
-      <p class="contact-cta">
+      <p class="contact-cta fontKarla">
         Need a Frontend developer? <span class="highlight">Let's talk!</span>
       </p>
-      <div class="tech-stack">
-        <img src="assets/img/javascript.svg" alt="JavaScript">
-        <img src="assets/img/html.svg" alt="HTML">
-        <img src="assets/img/css.svg" alt="CSS">
-      </div>
     </div>
   
     <div class="contact-right">
       <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
         <div class="form-group">
-          <label>What's your name?</label>
+          <label class="fontFira">What's your name?</label>
           <input 
             type="text" 
             name="name" 
@@ -30,8 +25,9 @@
         </div>
   
         <div class="form-group">
-          <label>What's your email?</label>
+          <label class="fontFira">What's your email?</label>
           <input 
+            class="fontKarla"
             type="email" 
             name="email" 
             [(ngModel)]="formData.email" 
@@ -41,18 +37,20 @@
         </div>
   
         <div class="form-group">
-          <label>How can I help you?</label>
+          <label class="fontFira">How can I help you?</label>
           <textarea 
+            class="fontKarla"
             name="message" 
             [(ngModel)]="formData.message" 
             required 
-            placeholder="Hello Lukas, I am interested in..."
+            placeholder="Hello Louisa, I am interested in..."
             rows="5"
           ></textarea>
         </div>
   
         <div class="privacy-check">
           <input 
+            class="fontKarla"
             type="checkbox" 
             name="privacy" 
             [(ngModel)]="formData.privacy" 
