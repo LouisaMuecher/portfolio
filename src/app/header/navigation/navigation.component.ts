@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navigation',
-  standalone: true,
-  imports: [],
   templateUrl: './navigation.component.html',
-  styleUrl: './navigation.component.scss'
+  styleUrls: ['./navigation.component.scss'],
+  standalone: true
 })
 export class NavigationComponent {
-  currentLanguage: string = 'en';
+  currentLanguage = 'EN';
 
-  switchLanguage(language: string): void {
-    this.currentLanguage = language;
-    // Hier kommt noch eine Methode zum Text wechseln hin.
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+  }
+
+  toggleLanguage() {
+    this.currentLanguage = this.currentLanguage === 'EN' ? 'DE' : 'EN';
+    const lang = this.currentLanguage.toLowerCase();
+    this.translate.use(lang);
   }
 }

@@ -1,12 +1,8 @@
 <nav class="fontFira">
-    <div class="language-switcher">
-        <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'">
-            EN
-        </button>
-        <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'">
-          DE
-        </button>
-    </div>
+    <div class="language-switch" [class.de]="currentLanguage === 'DE'" (click)="toggleLanguage()">
+        <span class="switch-option" [class.active]="currentLanguage === 'EN'">EN</span>
+        <span class="switch-option" [class.active]="currentLanguage === 'DE'">DE</span>
+      </div>
     <div class="menu">
         <a href="#">About</a>
         <a href="#">Skills</a>

@@ -50,30 +50,42 @@ img {
   z-index: 1;
 }
 
-.language-switcher {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid #3DCFB6;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 100px;
-  }
-  
-  .language-switcher button {
-    border: none;
-    background-color: transparent;
-    color: #3DCFB6;
-    padding: 7px 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
-    flex: 1;
+.language-switch {
+  display: flex;
+  background-color: rgba(79, 209, 197, 0.2);
+  border-radius: 25px;
+  padding: 2px;
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  position: relative;
+
+  .switch-option {
+    width: 50%;
     text-align: center;
+    padding: 8px 0;
+    color: #4fd1c5;
+    transition: all 0.3s ease;
+    z-index: 1;
+    
+    &.active {
+      color: #1c1c1c;
+    }
   }
-  
-  .language-switcher button.active {
-    background-color: #3DCFB6;
-    color: #fff;
-    font-weight: 700;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 36px;
+    background-color: #4fd1c5;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    left: 2px;
+    transform: translateX(0);
   }
+
+  &.de::after {
+    transform: translateX(41px);
+  }
+}

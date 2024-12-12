@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ProjectService, Project } from '../services/projects.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   standalone: true,
-  imports: [CommonModule, ProjectDetailsComponent]
+  imports: [CommonModule, ProjectDetailsComponent, TranslateModule ]
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [];

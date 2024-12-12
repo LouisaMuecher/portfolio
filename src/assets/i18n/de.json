@@ -1,0 +1,25 @@
+{
+    "HEADER": {
+      "PORTFOLIO": "Portfolio",
+      "ABOUT": "Über mich",
+      "SKILLS": "Fähigkeiten",
+      "PROJECTS": "Projekte",
+      "CONTACT": "Kontakt"
+    },
+    "PROJECTS": {
+      "TITLE": "Ausgewählte Projekte",
+      "SUBTITLE": "Entdecken Sie hier eine Auswahl meiner Arbeiten - interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen"
+    },
+    "CONTACT": {
+      "TITLE": "Lassen Sie uns zusammenarbeiten",
+      "SUBTITLE": "Haben Sie ein Problem zu lösen?",
+      "DESCRIPTION": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+      "CTA": "Brauchen Sie einen Frontend-Entwickler? Lassen Sie uns reden!",
+      "FORM": {
+        "NAME": "Wie ist Ihr Name?",
+        "EMAIL": "Wie ist Ihre E-Mail?",
+        "MESSAGE": "Wie kann ich Ihnen helfen?",
+        "SUBMIT": "Senden :)"
+      }
+    }
+  }

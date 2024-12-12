@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { NavigationComponent } from './navigation/navigation.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NavigationComponent],
+  imports: [CommonModule, NavigationComponent],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
