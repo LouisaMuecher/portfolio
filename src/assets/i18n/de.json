@@ -22,10 +22,10 @@
     },
     "PROJECTS": {
       "JOIN": {
-      "DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren von Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu"
+      "DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren von Aufgaben mit Hilfe von Drag-and-Drop-Funktionen."
       },
       "POLLO_LOCO": {
-        "DESCRIPTION": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
+        "DESCRIPTION": "Jump 'n' run Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
       },
       "DABUBBLE": {
         "DESCRIPTION": "Diese App ist ein Klon von Slack und vereinfacht die Teamkommunikation mit Echtzeitnachrichten und organisierten Kanälen."
