@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
   standalone: true,
-  imports: [CommonModule, FormsModule, HttpClientModule]
+  imports: [CommonModule, FormsModule, HttpClientModule, TranslateModule]
 })
 export class ContactComponent {
   formData = {
@@ -18,7 +19,13 @@ export class ContactComponent {
     privacy: false
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 
   onSubmit() {
     if (!this.formData.privacy) {

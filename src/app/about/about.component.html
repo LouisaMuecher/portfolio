@@ -4,26 +4,13 @@
     <img class="hover-img" src="./../../assets/img/lines.png" alt="" />
   </div>
   <div class="text-section">
-    <p class="subtitle fontKarla">Who I Am</p>
-    <div class="text-box">
-      <h2 class="fontFira">About me</h2>
+    <p class="subtitle fontKarla">{{ 'ABOUT.SUBTITLE' | translate }}</p>
+    <div class="text-box" [ngClass]="{'de-text': currentLanguage === 'DE', 'en-text': currentLanguage === 'EN'}">
+      <h2 class="fontFira">{{ 'ABOUT.TITLE' | translate }}</h2>
       <p class="fontKarla">
-        Hi, I'm Louisa, a creative and tech-savvy individual with a solid
-        foundation in graphic and object design, as well as experience as a
-        media manager in digital and print. After an intense immersion into the
-        world of computer visualisation and design, and four successful years as
-        a digital business manager, I am currently in the midst of an exciting
-        training course to become a full-stack developer at the Developer
-        Academy. These steps reflect my deep affinity for innovation, design,
-        technology and art.
+        {{ 'ABOUT.TEXT-1' | translate }}
         <br><br>
-        My career has been characterised by a constant search for new challenges
-        and a passion for combining technological solutions with creative
-        design. As someone who is at home at the intersection of computer
-        science and creative design, I strive to create projects that are not
-        only technically sophisticated, but also aesthetically pleasing. Immerse
-        yourself in my projects and discover how I turn my visions into reality.
-        Thank you for visiting!
+        {{ 'ABOUT.TEXT-2' | translate }}
       </p>
     </div>
   </div>

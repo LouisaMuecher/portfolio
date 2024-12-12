@@ -24,7 +24,7 @@ export class ProjectService {
     {
       id: 1,
       title: 'Join',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: 'PROJECTS.JOIN.DESCRIPTION',
       image: 'assets/img/join.png',
       technologies: ['JavaScript', 'HTML', 'CSS'],
       technologiesWithIcons: [
@@ -38,7 +38,7 @@ export class ProjectService {
     {
       id: 2,
       title: 'El Pollo Loco',
-      description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      description: 'PROJECTS.POLLO_LOCO.DESCRIPTION',
       image: 'assets/img/elpolloloco.png',
       technologies: ['JavaScript', 'HTML', 'CSS'],
       technologiesWithIcons: [
@@ -52,7 +52,7 @@ export class ProjectService {
     {
       id: 3,
       title: 'DABubble',
-      description: 'This app is a Slack clone, simplifying team communication with real-time messaging and organized channels.',
+      description: 'PROJECTS.DABUBBLE.DESCRIPTION',
       image: 'assets/img/dabubble.png',
       technologies: ['Angular', 'Firebase', 'TypeScript'],
       technologiesWithIcons: [

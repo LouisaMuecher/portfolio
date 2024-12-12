@@ -1,4 +1,3 @@
-// app.config.ts
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';

@@ -55,12 +55,21 @@
 
 .text-box {
     width: 568px;
-    height: 562px;
+    /*height: 562px;*/
     margin-top: 30px;
     margin-bottom: 100px;
     border: 2px solid #3DCFB6;
     border-radius: 30px;
-    
+    transition: height 0.3s ease;
+//
+    &.en-text {
+    height: 562px; // Angepasste Höhe für englischen Text
+    }
+
+    &.de-text {
+    height: 604px; // Größere Höhe für deutschen Text
+    }
+//    
     h2 {
         font-size: 64px;
         font-weight: 700;
