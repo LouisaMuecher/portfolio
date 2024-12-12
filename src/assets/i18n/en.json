@@ -53,6 +53,11 @@
       "CTA": "Need a Frontend developer?",
       "CTA-1": "Let's talk!",
       "FORM": {
+          "PLACEHOLDER": {
+          "NAME": "Your name goes here",
+          "EMAIL": "youremail@email.com",
+          "MESSAGE": "Hello Louisa, I am interested in..."
+          },
         "NAME": "What's your name?",
         "EMAIL": "What's your email?",
         "MESSAGE": "How can I help you?",

@@ -52,13 +52,18 @@
       "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
       "CTA": "Brauchen Sie eine Frontend-Entwicklerin? Lassen Sie uns reden!",
       "FORM": {
-        "NAME": "Wie ist Ihr Name?",
-        "EMAIL": "Wie ist Ihre E-Mail?",
-        "MESSAGE": "Wie kann ich Ihnen helfen?",
-        "PRIVACY-1": "Ich habe die ",
-        "PRIVACY-2": "Datenschutzbestimmungen",
-        "PRIVACY-3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-        "SUBMIT": "Senden :)"
+        "PLACEHOLDER": {
+        "NAME": "Ihr Name",
+        "EMAIL": "ihreemail@email.com",
+        "MESSAGE": "Hallo Louisa, ich interessiere mich für..."
+        },
+          "NAME": "Wie ist Ihr Name?",
+          "EMAIL": "Wie ist Ihre E-Mail?",
+          "MESSAGE": "Wie kann ich Ihnen helfen?",
+          "PRIVACY-1": "Ich habe die ",
+          "PRIVACY-2": "Datenschutzbestimmungen",
+          "PRIVACY-3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+          "SUBMIT": "Senden :)"
       }
     },
     "FOOTER": {
