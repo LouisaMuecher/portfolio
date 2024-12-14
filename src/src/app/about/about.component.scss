@@ -1,0 +1,91 @@
+* {
+    background-color: #1c1c1c;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container {
+    position: relative;
+    width: 468px;
+    height: 468px;
+  }
+
+.profile-img {
+    width: 468px;
+    height: 468px;
+    object-fit: contain;
+    border-radius: 30px;
+    position: relative;
+    top: 80px;
+    left: 80px;
+    z-index: 2;
+}
+
+.hover-img {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    left: 50px; 
+    bottom: -110px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .image-container:hover .hover-img {
+    opacity: 1;
+  }
+
+
+.text-section {
+    position: relative;
+    right: 20px;
+}
+
+.subtitle {
+    color: #3DCFB6;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 120px;
+}
+
+.text-box {
+    width: 568px;
+    /*height: 562px;*/
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border: 2px solid #3DCFB6;
+    border-radius: 30px;
+    transition: height 0.3s ease;
+//
+    &.en-text {
+    height: 562px; // Angepasste Höhe für englischen Text
+    }
+
+    &.de-text {
+    height: 604px; // Größere Höhe für deutschen Text
+    }
+//    
+    h2 {
+        font-size: 64px;
+        font-weight: 700;
+        color: #3DCFB6;
+        background-color: rgba(61, 207, 182, 0.1);
+        padding: 32px 32px 0 32px;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    p {
+        background-color: rgba(61, 207, 182, 0.1);
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        padding: 28px;
+        border-radius: 0px 0px 30px 30px;
+    }
+}

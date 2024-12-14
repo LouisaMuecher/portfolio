@@ -38,7 +38,7 @@ export class ProjectService {
     {
       id: 2,
       title: 'El Pollo Loco',
-      description: 'PROJECTS.POLLO_LOCO.DESCRIPTION,
+      description: 'PROJECTS.POLLO_LOCO.DESCRIPTION',
       image: 'assets/img/elpolloloco.png',
       technologies: ['JavaScript', 'HTML', 'CSS'],
       technologiesWithIcons: [

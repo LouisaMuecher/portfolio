@@ -1,0 +1,157 @@
+.skills-section {
+  background-image: url("./../../assets/img/background_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #3dcfb6;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-section {
+  position: relative;
+  margin-right: 50px;
+}
+
+.subtitle {
+  color: #3dcfb6;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 120px;
+}
+
+.btn {
+  position: relative;
+  top: 6%;
+  margin-left: 28px;
+  display: flex;
+  gap: 40px;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  height: 48px;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 0px 24px 0px 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+button:hover {
+  border: 1px solid #3dcfb6;
+  color: #3dcfb6;
+}
+
+.text-box {
+  width: 568px;
+  height: 540px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border: 2px solid #3dcfb6;
+  border-radius: 30px;
+  background-color: rgba(61, 207, 182, 0.1);
+
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #3dcfb6;
+    padding: 32px 32px 20px 32px;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .subtitle-2 {
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 40px;
+  }
+
+  .first {
+    color: white;
+  }
+
+  .second {
+    color: #3dcfb6;
+  }
+
+  p {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding: 10px 28px;
+    border-radius: 0px 0px 30px 30px;
+  }
+}
+
+.skills-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  width: 40%;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.skill-item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.skill-item span {
+    font-size: 18px;
+    color: #3DCFB6;
+  }
+
+.speech-bubble {
+    visibility: hidden;
+    width: 200px;
+    background-color: white;
+    color: #3DCFB6;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%); 
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s; 
+    margin-left: 60px; 
+  }
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.skill-item:hover .speech-bubble { 
+    visibility: visible;
+    opacity: 1;
+  }

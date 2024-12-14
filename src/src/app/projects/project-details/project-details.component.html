@@ -6,7 +6,7 @@
     <h2 class="project-title fontFira">{{ project.title }}</h2>
     
     <h3 class="section-title fontFira">{{ 'PROJECTS.SELECTION-TITLE' | translate }}</h3>
-    <p class="project-description fontKarla">{{ project.description }}</p>
+    <p class="project-description fontKarla">{{ project.description | translate }}</p>
 
     <div class="project-preview">
       <img [src]="project.image" [alt]="project.title">

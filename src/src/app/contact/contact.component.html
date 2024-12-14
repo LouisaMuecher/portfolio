@@ -16,11 +16,12 @@
         <div class="form-group">
           <label class="fontFira">{{ 'CONTACT.FORM.NAME' | translate }}</label>
           <input 
+            class="fontKarla"
             type="text" 
             name="name" 
             [(ngModel)]="formData.name" 
             required 
-            placeholder="Your name goes here"
+            [placeholder]="'CONTACT.FORM.PLACEHOLDER.NAME' | translate"
           >
         </div>
   
@@ -32,7 +33,7 @@
             name="email" 
             [(ngModel)]="formData.email" 
             required 
-            placeholder="youremail@email.com"
+            [placeholder]="'CONTACT.FORM.PLACEHOLDER.EMAIL' | translate"
           >
         </div>
   
@@ -43,7 +44,7 @@
             name="message" 
             [(ngModel)]="formData.message" 
             required 
-            placeholder="Hello Louisa, I am interested in..."
+            [placeholder]="'CONTACT.FORM.PLACEHOLDER.MESSAGE' | translate"
             rows="5"
           ></textarea>
         </div>
