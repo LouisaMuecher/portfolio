@@ -1,3 +1,5 @@
+@import './../../styles.scss';
+
 * {
     background-color: #1c1c1c;
 }
@@ -5,13 +7,24 @@
 .about {
     display: flex;
     justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .image-container {
     position: relative;
     width: 468px;
     height: 468px;
-  }
+
+    @include mobile {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+}
 
 .profile-img {
     width: 468px;
@@ -22,6 +35,13 @@
     top: 80px;
     left: 80px;
     z-index: 2;
+
+    @include mobile {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
 }
 
 .hover-img {
@@ -34,16 +54,30 @@
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+
+    @include mobile {
+        opacity: 0;
+    }
   }
 
   .image-container:hover .hover-img {
     opacity: 1;
+    
+    @include mobile {
+        opacity: 0;
+    }
   }
 
 
-.text-section {
+  .text-section {
     position: relative;
     right: 20px;
+
+    @include mobile {
+        right: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
 }
 
 .subtitle {
@@ -51,25 +85,39 @@
     font-size: 24px;
     font-weight: 500;
     margin-top: 120px;
+
+    @include mobile {
+        margin-top: 0px;
+    }
 }
 
 .text-box {
     width: 568px;
-    /*height: 562px;*/
     margin-top: 30px;
     margin-bottom: 100px;
     border: 2px solid #3DCFB6;
     border-radius: 30px;
     transition: height 0.3s ease;
-//
+
+    @include mobile {
+        width: 100%;
+        margin: 20px 0;
+    }
+
     &.en-text {
-    height: 562px; // Angepasste Höhe für englischen Text
+        height: 562px;
+        @include mobile {
+            height: auto;
+        }
     }
 
     &.de-text {
-    height: 604px; // Größere Höhe für deutschen Text
+        height: 604px;
+        @include mobile {
+            height: auto;
+        }
     }
-//    
+   
     h2 {
         font-size: 64px;
         font-weight: 700;
@@ -77,6 +125,11 @@
         background-color: rgba(61, 207, 182, 0.1);
         padding: 32px 32px 0 32px;
         border-radius: 30px 30px 0px 0px;
+
+        @include mobile {
+            font-size: 32px;
+            padding: 20px 20px 0 20px;
+        }
     }
 
     p {
@@ -87,5 +140,10 @@
         line-height: 21.6px;
         padding: 28px;
         border-radius: 0px 0px 30px 30px;
+
+        @include mobile {
+            font-size: 16px;
+            padding: 20px;
+        }
     }
 }
