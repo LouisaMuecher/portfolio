@@ -1,13 +1,24 @@
 <nav class="fontFira">
-    <div class="language-switch" [class.de]="currentLanguage === 'DE'" (click)="toggleLanguage()">
+    <div class="language-switch desktop-switch" [class.de]="currentLanguage === 'DE'" (click)="toggleLanguage()">
         <span class="switch-option" [class.active]="currentLanguage === 'EN'">EN</span>
         <span class="switch-option" [class.active]="currentLanguage === 'DE'">DE</span>
-      </div>
-    <div class="menu">
-        <a href="#">{{ 'HEADER.ABOUT' | translate }}</a>
-        <a href="#">{{ 'HEADER.SKILLS' | translate }}</a>
-        <a href="#">{{ 'HEADER.PROJECTS' | translate }}</a>
-        <a href="#">{{ 'HEADER.CONTACT' | translate }}</a>
     </div>
-    <a href="#"><img src="./../../../assets/img/logo.png" alt=""></a>
+    <div class="menu" [class.active]="isMenuOpen">
+        <a class="menu-item" href="#about" (click)="scrollToSection('about', $event)">{{ 'HEADER.ABOUT' | translate }}</a>
+        <a class="menu-item" href="#skills" (click)="scrollToSection('skills', $event)">{{ 'HEADER.SKILLS' | translate }}</a>
+        <a class="menu-item" href="#projects" (click)="scrollToSection('projects', $event)">{{ 'HEADER.PROJECTS' | translate }}</a>
+        <a class="menu-item" href="#contact" (click)="scrollToSection('contact', $event)">{{ 'HEADER.CONTACT' | translate }}</a>
+
+        <div class="language-switch mobile-switch" [class.de]="currentLanguage === 'DE'" (click)="toggleLanguage()">
+            <span class="switch-option" [class.active]="currentLanguage === 'EN'">EN</span>
+            <span class="switch-option" [class.active]="currentLanguage === 'DE'">DE</span>
+        </div>
+    </div>
+    <a href="#header"><img src="./../../../assets/img/logo.png" alt=""></a>
+
+    <div class="burger-menu" [class.active]="isMenuOpen" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </nav>

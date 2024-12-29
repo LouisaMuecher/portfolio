@@ -1,14 +1,20 @@
+$breakpoint-mobile: 768px;
+
 .header-section {
   background-image: url("./../../assets/img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 100%;
-  height: 900px;
+  height: 56.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 100vh;
+  }
 }
 
 .header-content {
@@ -18,7 +24,7 @@
 h1 {
   color: #d9d9d9;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 4.375rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -27,16 +33,24 @@ h1 {
   top: 36%;
   left: 5%;
   right: 5%;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 2.5rem;
+    top: 30%;
+  }
 }
 
-$numberOfElements: 4;
-$fontSize: 26px;
+$fontSize: 1.625rem;
 
 .center {
   position: absolute;
   top: 30%;
   left: 0;
   right: 0;
+
+  @media (max-width: $breakpoint-mobile) {
+    top: 25%;
+  }
 }
 
 .carousel {
@@ -46,6 +60,10 @@ $fontSize: 26px;
   font-size: $fontSize;
   line-height: $fontSize * 1.5;
   height: $fontSize * 1.5;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 1.25rem;
+  }
 
   .change_outer {
     display: flex;
@@ -61,7 +79,7 @@ $fontSize: 26px;
 
     .element {
       display: block;
-      color: #D9D9D9;
+      color: #d9d9d9;
     }
   }
 }
@@ -89,145 +107,211 @@ $fontSize: 26px;
 }
 
 .btn {
-    position: relative;
-    top: 6%;
-    display: flex;
-    gap: 40px;
+  position: relative;
+  top: 6%;
+  display: flex;
+  gap: 2.5rem;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    top: 10%;
+  }
 }
 
 button {
   background-color: transparent;
   color: white;
   text-align: center;
-  height: 48px;
-  border: 1px solid white;
-  border-radius: 100px;
-  padding: 0px 24px 0px 24px;
-  font-size: 18px;
+  height: 3rem;
+  border: 0.0625rem solid white;
+  border-radius: 6.25rem;
+  padding: 0 1.5rem;
+  font-size: 1.125rem;
   font-weight: 400;
-}
+  cursor: pointer;
 
-button:hover {
-    border: 1px solid #3DCFB6;
-    color: #3DCFB6;
+  &:hover {
+    color: #3dcfb6;;
+    border: 0.0625rem solid #3dcfb6;;
+  }
 }
 
 .contact {
+  position: absolute;
+  top: 43%;
+  right: -3rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $breakpoint-mobile) {
     position: absolute;
-    top: 48%;
-    right: 0;
-    bottom: 0;
+    top: 40%;
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .mail {
-    color: white;
-    display: flex;
-    width: 200px;
-    transform: rotateZ(-90deg);
-    text-decoration: none;
+  color: white;
+  display: flex;
+  width: 12rem;
+  height: 1rem;
+  transform: rotateZ(-90deg);
+  text-decoration: none;
+
+  @media (max-width: $breakpoint-mobile) {
+    transform: none;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 20%;
+  }
+
+  .mail-text {
+    @media (max-width: $breakpoint-mobile) {
+      display: none;
+    }
+  }
+
+  .mail-icon {
+    display: none;
+
+    @media (max-width: $breakpoint-mobile) {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.mail:hover {
+  color: #3dcfb6;
 }
 
 .contact-btn {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
 }
 
 .github {
-    width: 36px;
-    height: 36px;
-    top: 30%;
-    right: 80px;
+  width: 2rem;
+  height: 2rem;
+  top: 25%;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 2rem;
+    height: 2rem;
+    padding-top: 2rem;
+  }
 }
 
 .github:hover {
-    content: url(./../../assets/img/github-hover.svg);
-    width: 50px;
-    height: 38px;
-    top: 30%;
-    right: 66px;
+  content: url(./../../assets/img/github-hover.svg);
+  width: 4rem;
+  height: 2rem;
 }
 
 .linkedin {
-    width: 26px;
-    height: 26px;
-    top: 42%;
-    right: 85px;
+  width: 1.7rem;
+  height: 1.7rem;
+  top: 38%;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding-top: 2rem;
+  }
 }
 
 .linkedin:hover {
-    content: url(./../../assets/img/linkedin-hover.svg);
-    width: 50px;
-    height: 34px;
-    top: 41%;
-    right: 66px;
+  content: url(./../../assets/img/linkedin-hover.svg);
+  width: 4rem;
+  height: 2rem;
 }
 
 .image-container {
-    overflow: hidden;
-    height: auto;
-    display: block;
-    position: absolute;
-    width: 30px;
-    left: 62px;
-    top: 60%;
-  
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  overflow: hidden;
+  height: auto;
+  display: block;
+  position: absolute;
+  width: 1.875rem;
+  left: 2.2rem;
+  top: 60%;
+  cursor: pointer;
+
+  @media (max-width: $breakpoint-mobile) {
+    transform: translateX(-50%);
+    top: 55%;
+    left: 3rem;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 .v-line-long {
-    position: absolute;
-    left: 75px;
-    top: 68%;
-    height: 200px;
-    z-index: 1; 
+  position: absolute;
+  left: 3rem;
+  top: 68%;
+  height: 12.5rem;
+  z-index: 1;
 }
 
 .v-line-short {
-    position: absolute;
-    right: 97px;
-    top: 74.5%;
-    height: 186px;
-    z-index: 1; 
+  position: absolute;
+  right: 3rem;
+  top: 74.5%;
+  height: 11.625rem;
+  z-index: 1;
 }
 
 .marquee-container {
-    width: 100%;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.1); /* Hintergrund mit Transparenz */
-    padding: 10px 0;
-    transform: rotateZ(-1deg);
-    height: 62px;
-    position: absolute;
-    top: 80%;
-    z-index: 2; 
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.625rem 0;
+  transform: rotateZ(-1deg);
+  height: 3.875rem;
+  position: absolute;
+  top: 80%;
+  z-index: 2;
+
+  @media (max-width: $breakpoint-mobile) {
+    top: 85%;
   }
-  
-  .marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 25s linear infinite;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee span {
+  color: #3dcfb6;
+  font-size: 1.5rem;
+  padding-left: 2%;
+  position: relative;
+  top: 0.5rem;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 1.125rem;
   }
-  
-  .marquee span {
-    color: #3DCFB6;
-    font-size: 24px;
-    padding-left: 2%; /* Abstand zwischen den einzelnen Texten */
-    position: relative;
-    top: 8px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
   }
-  
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  100% {
+    transform: translateX(-50%);
   }
-  
+}

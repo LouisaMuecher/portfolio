@@ -1,4 +1,4 @@
-<header class="header-section">
+<header id="header" class="header-section">
   <app-navigation></app-navigation>
   <div class="header-content">
     <div class="frame fontFira">
@@ -18,14 +18,15 @@
     <h1 class="fontKarla">Louisa Mücher</h1>
   </div>
   <div class="btn fontKarla">
-    <button>{{ 'HEADER.BTN-PROJECTS' | translate }}</button>
-    <button>{{ 'HEADER.BTN-CONTACT' | translate }}</button>
-  </div>
+    <button (click)="scrollToSection('projects')">{{ 'HEADER.BTN-PROJECTS' | translate }}</button>
+    <button (click)="scrollToSection('contact')">{{ 'HEADER.BTN-CONTACT' | translate }}</button>
+  </div> 
 
   <div class="contact">
-    <a class="mail fontKarla" href="mailto:info&#64;louisa-muecher.de"
-      >info&#64;louisa-muecher.de</a
-    >
+    <a class="mail fontKarla" href="mailto:info&#64;louisa-muecher.de">
+      <span class="mail-text">info&#64;louisa-muecher.de</span>
+      <img class="mail-icon" src="./../../assets/img/mail.png" alt="email">
+    </a>
     <a
       class="contact-btn github"
       href="https://github.com/LouisaMuecher"
@@ -46,7 +47,7 @@
   />
 
   <div class="image-container">
-    <img [src]="currentImage" />
+    <img (click)="scrollToSection('about')" [src]="currentImage" />
   </div>
   <img
     class="v-line-long"
