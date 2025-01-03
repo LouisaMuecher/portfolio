@@ -1,49 +1,98 @@
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1300px;
+
 .projects-container {
   padding: 4rem 6rem;
   background-color: #1c1c1c;
   min-height: 100vh;
   color: white;
   margin: 0 auto;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 3rem 4rem;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 6rem 1.5rem;
+    min-height: 100vh;
+  }
 }
 
 .portfolio-label {
   color: #3DCFB6;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 1.25rem;
+  }
 }
 
 .featured-title {
   color: #3DCFB6;
-  font-size: 64px;
+  font-size: 4rem;
   margin-bottom: 1rem;
   font-weight: 700;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 2.5rem;
+  }
 }
 
 .subtitle {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   margin-bottom: 4rem;
-  max-width: 600px;
-  line-height: 21.6px;
+  max-width: 37.5rem;
+  line-height: 1.35;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
 }
 
 .projects-section {
   display: flex;
   gap: 4rem;
   position: relative;
+
+  @media (max-width: $breakpoint-tablet) {
+    gap: 2rem;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 .projects-list {
   .project-item {
-    width: 700px;
+    width: 43.75rem;
     text-decoration: none;
     color: #fff;
-    padding: 40px 32px;
-    border-width: 1px 0;
+    padding: 2.5rem 2rem;
+    border-width: 0.0625rem 0;
     border-style: solid;
     border-color: #3DCFB6;
+    cursor: pointer;
+  
+    @media (max-width: $breakpoint-tablet) {
+      padding: 2rem 1.5rem;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 1.5rem 1rem;
+      width: 100%;
+    }
   
     &:hover {
       background-color: #3DCFB64D;
@@ -56,19 +105,33 @@
   }
 
   .project-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1.25rem;
+    }
   }
 
   .project-tech {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1rem;
+    }
   }
 
   .project-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
   }
 }
 
@@ -78,13 +141,21 @@
   flex: 1;
   height: fit-content;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   animation: fadeIn 0.3s ease forwards;
 
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
+  }
+
   .preview-image {
-    width: 400px;
+    width: 25rem;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
+
+    @media (max-width: $breakpoint-tablet) {
+      width: 100%;
+    }
   }
 }
 
@@ -92,15 +163,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 1024px) {
-  .projects-section {
-    flex-direction: column;
-  }
-
-  .preview-container {
-    display: none;
   }
 }
