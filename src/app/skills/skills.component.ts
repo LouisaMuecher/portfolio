@@ -10,4 +10,14 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class SkillsComponent {
 
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
 }
