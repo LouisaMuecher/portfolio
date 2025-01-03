@@ -2,11 +2,8 @@ $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1300px;
 
 .skills-section {
-  background-image: url("./../../assets/img/background_2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: #3dcfb6;
+  background: #1C1C1C;
+  background: radial-gradient(circle at -15% 50%, #08463B 20%, #1C1C1C 30%);
   width: 100%;
   height: 56.25rem;
   display: flex;

@@ -1,10 +1,7 @@
 $breakpoint-mobile: 768px;
 
 .header-section {
-  background-image: url("./../../assets/img/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: linear-gradient(45deg, #1C1C1C 30%, #08463B);
   width: 100%;
   height: 56.25rem;
   display: flex;
