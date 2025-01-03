@@ -32,7 +32,7 @@ export class ContactComponent {
       return; // Verhindert das Absenden wenn Datenschutz nicht akzeptiert wurde
     }
 
-    this.http.post('assets/php/send_mail.php', this.formData)
+    this.http.post('home/assets/php/send_mail.php', this.formData)
       .subscribe({
         next: (response) => {
           console.log('Message sent successfully');
