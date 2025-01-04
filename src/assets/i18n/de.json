@@ -50,7 +50,8 @@
       "SUBTITLE": "Wie kann ich Ihnen helfen?",
       "CONTACT": "Kontaktieren Sie mich",
       "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
-      "CTA": "Brauchen Sie eine Frontend-Entwicklerin? Lassen Sie uns reden!",
+      "CTA": "Brauchen Sie eine Frontend-Entwicklerin?",
+      "CTA-1": "Lassen Sie uns reden!",
       "FORM": {
         "PLACEHOLDER": {
         "NAME": "Ihr Name",
