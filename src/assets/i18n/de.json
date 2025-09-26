@@ -10,15 +10,15 @@
       "ELEMENT-4": "Design",
       "BTN-PROJECTS": "Meine Projekte",
       "BTN-CONTACT": "Kontakt", 
-      "MARQUEE-ELEMENT-1": "Aus Düsseldorf",
+      "MARQUEE-ELEMENT-1": "Aus Essen",
       "MARQUEE-ELEMENT-2": "Webentwicklung",
-      "MARQUEE-ELEMENT-3": "Arbeite beim Red Dot Design Award"
+      "MARQUEE-ELEMENT-3": "Head of Systems & Digital Development beim Red Dot Design Award"
     },
     "ABOUT": {
       "TITLE": "Über mich",
       "SUBTITLE": "Wer bin ich",
-      "TEXT-1": "Hallo, ich bin Louisa, eine kreative und technikbegeisterte Person mit einer fundierten Ausbildung in Grafik- und Objektdesign und Medienkauffrau im Digital- und Printbereich. Nach einer intensiven Einführung in die Welt der Computervisualisierung und des Designs und vier erfolgreichen Jahren als Digital Business Managerin, befinde ich mich derzeit inmitten einer spannenden Ausbildung zur Fullstack-Entwicklerin an der Developer Academy. Diese Schritte spiegeln meine tiefe Affinität zu Innovation, Design, Technologie und Kunst wider.",
-      "TEXT-2": "Meine Karriere ist geprägt von der ständigen Suche nach neuen Herausforderungen und der Leidenschaft, technologische Lösungen mit kreativem Design zu verbinden. Als jemand, der sich an der Schnittstelle von Informatik und kreativem Design zu Hause fühlt, strebe ich danach, Projekte zu schaffen, die nicht nur technisch anspruchsvoll, sondern auch ästhetisch ansprechend sind. Tauchen Sie ein in meine Projekte und entdecken Sie, wie ich meine Visionen in die Realität umsetze. Ich danke Ihnen für Ihren Besuch!"
+      "TEXT-1": "Hallo, ich bin Louisa, eine kreative und technikbegeisterte Person mit Wurzeln im Grafik- und Objektdesign sowie einer Ausbildung zur Medienkauffrau im Digital- und Printbereich. Nach meiner Einführung in Computervisualisierung und Design und vier erfolgreichen Jahren als Digital Business Managerin habe ich bei der Developer Academy tiefe Kenntnisse in der Software-Entwicklung erworben.",
+      "TEXT-2": "Heute verantworte ich als Head of Systems & Digital Development beim Red Dot Design Award die strategische und technologische Weiterentwicklung unserer digitalen Systeme. Meine Arbeit bewegt sich an der Schnittstelle von Technologie, Design und Innovation. Dabei verfolge ich das Ziel, digitale Lösungen zu entwickeln, die sowohl funktional als auch ästhetisch überzeugen."
     },
     "PROJECTS": {
       "JOIN": {

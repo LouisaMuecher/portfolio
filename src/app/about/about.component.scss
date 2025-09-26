@@ -130,7 +130,7 @@ $breakpoint-tablet: 1300px;
   }
 
   &.en-text {
-    height: 38.125rem;
+    height: 32.125rem;
 
     @media (max-width: $breakpoint-mobile) {
       height: auto;
@@ -142,7 +142,7 @@ $breakpoint-tablet: 1300px;
   }
 
   &.de-text {
-    height: 41.2rem;
+    height: 33.6rem;
 
     @media (max-width: $breakpoint-mobile) {
       height: auto;

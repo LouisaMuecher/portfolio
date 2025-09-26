@@ -10,15 +10,15 @@
       "ELEMENT-4": "Design",
       "BTN-PROJECTS": "Check my work",
       "BTN-CONTACT": "Contact me", 
-      "MARQUEE-ELEMENT-1": "Based in Düsseldorf",
+      "MARQUEE-ELEMENT-1": "Based in Essen",
       "MARQUEE-ELEMENT-2": "Web Development",
-      "MARQUEE-ELEMENT-3": "Works for Red Dot Design Award"
+      "MARQUEE-ELEMENT-3": "Head of Systems & Digital Development at Red Dot Design Award"
     },
     "ABOUT": {
       "TITLE": "About me",
       "SUBTITLE": "Who I Am",
-      "TEXT-1": "Hi, I'm Louisa, a creative and tech-savvy individual with a solid foundation in graphic and object design, as well as experience as a media manager in digital and print. After an intense immersion into the world of computer visualisation and design, and four successful years as a digital business manager, I am currently in the midst of an exciting training course to become a full-stack developer at the Developer Academy. These steps reflect my deep affinity for innovation, design, technology and art.",
-      "TEXT-2": "My career has been characterised by a constant search for new challenges and a passion for combining technological solutions with creative design. As someone who is at home at the intersection of computer science and creative design, I strive to create projects that are not only technically sophisticated, but also aesthetically pleasing. Immerse yourself in my projects and discover how I turn my visions into reality. Thank you for visiting!"
+      "TEXT-1": "Hi, I'm Louisa, a creative and tech-savvy individual with a solid foundation in graphic and object design, as well as experience as a media manager in digital and print. After an intense immersion into the world of computer visualisation and design, and four successful years as a digital business manager, I gained in-depth knowledge of software development at the Developer Academy.",
+      "TEXT-2": "As Head of Systems and Digital Development at the Red Dot Design Award, I am responsible for driving the strategic and technological advancement of our digital systems. Working at the intersection of technology, design, and innovation, I create digital solutions that are not only highly functional but also deliver a compelling aesthetic experience."
     },
     "PROJECTS": {
       "JOIN": {
